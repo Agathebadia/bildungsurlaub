@@ -1,23 +1,21 @@
-<table >
-  <caption class="font-extrabold">Entitlement for each German state</caption>
-  <div class="">
+<table class="border-separate border border-slate-400">
+  <caption class="my-2 font-extrabold border border-slate-400">Entitlement for each German state</caption>
   <tr class="">
-    <td class="py-3"></td>
-    <th class="py-3" scope="col">Entitlement per year</th>
-    <th class="py-3" scope="col">Entitlement of 2 years may be combined</th>
+    <td class="py-3 px-2"></td>
+    <th class="py-3 px-2 border border-slate-300" scope="col">Entitlement per year</th>
+    <th class="py-3 px-2 border border-slate-300" scope="col">Entitlement of 2 years may be combined</th>
   </tr>
   {{#each @states as |state|}}
     <tr>
-      <th class="py-3" scope="row">{{state.stateName}}</th>
-      <td class="py-3">{{state.entitlementPerYear}}</td>
-      <td class="py-3">{{state.entitlementOfTwoYears}}</td>
+      <th class="py-3 px-2 border border-slate-300" scope="row">{{state.stateName}}</th>
+      <td class="py-3 px-2 border border-slate-300">{{state.entitlementPerYear}}</td>
+      <td class="py-3 px-2 border border-slate-300">{{state.entitlementOfTwoYears}}</td>
     </tr>
   {{/each}}
-  </div>
+</table>
 
 <div class="text-right">
-    Source: <a href="https://bildungsurlaub-approval.com/info-educators/" target="_blank"
-      class="underline underline-offset-2">Bildungsurlaub approval</a>
-    </div>
-</table>
+  Source: <a href="https://bildungsurlaub-approval.com/info-educators/" target="_blank"
+    class="underline underline-offset-2">Bildungsurlaub approval</a>
+</div>
 

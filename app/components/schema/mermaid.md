@@ -9,3 +9,5 @@ stateDiagram-v2
     state2 --> state3
     state3 --> state4
 ```
+<!-- mmdc -i app/components/schema/mermaid.md -o mermaid.md -->
+<!-- https://github.com/mermaid-js/mermaid-cli -->
