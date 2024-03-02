@@ -1,0 +1,23 @@
+<table >
+  <caption class="font-extrabold">Entitlement for each German state</caption>
+  <div class="">
+  <tr class="">
+    <td class="py-3"></td>
+    <th class="py-3" scope="col">Entitlement per year</th>
+    <th class="py-3" scope="col">Entitlement of 2 years may be combined</th>
+  </tr>
+  {{#each @states as |state|}}
+    <tr>
+      <th class="py-3" scope="row">{{state.stateName}}</th>
+      <td class="py-3">{{state.entitlementPerYear}}</td>
+      <td class="py-3">{{state.entitlementOfTwoYears}}</td>
+    </tr>
+  {{/each}}
+  </div>
+
+<div class="text-right">
+    Source: <a href="https://bildungsurlaub-approval.com/info-educators/" target="_blank"
+      class="underline underline-offset-2">Bildungsurlaub approval</a>
+    </div>
+</table>
+

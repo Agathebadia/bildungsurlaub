@@ -1,7 +1,7 @@
   <h2 id="accordion-flush-heading-{{@index}}">
     <button type="button" class="flex items-center justify-between m-4 w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
       data-accordion-target="#accordion-flush-body-{{@index}}" aria-expanded="false" aria-controls="accordion-flush-body-{{@index}}">
-      <span>{{@state.stateName}}</span>
+      <span>{{@state.stateNameAndBildung}}</span>
       <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
         fill="none" viewBox="0 0 10 6">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
@@ -23,11 +23,16 @@
         </p>
         {{/each}}
       <p class="mb-2 text-gray-500 dark:text-gray-400">
-        <a href="{{@state.legalDocument}}" target="_blank" class="underline underline-offset-2">Legal documentation of {{@state.stateName}}</a>
+        {{#if @state.hasBildungsUrlaubLaws}}
+          <a href="{{@state.legalDocument}}" target="_blank" class="underline underline-offset-2">Legal documentation of
+          {{@state.stateName}}</a>
+        {{else}}
+            <a href="{{@state.legalDocument}}" target="_blank" class="underline underline-offset-2">More information about {{@state.stateName}}</a>
+        {{/if}}
       </p>
     </div>
   </div>
 
 {{log @index 'index'}}
 {{log @state.legalDocument}}
-{{log @state.principles}}
+{{log @state.hasBildungsUrlaubLaws}}

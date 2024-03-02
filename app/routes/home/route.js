@@ -5,8 +5,12 @@ export default class HomeRoute extends Route {
         return {
       "data": [
         {
-          "stateName": "Baden-Württemberg (»Bildungszeit«)",
+          "stateNameAndBildung": "Baden-Württemberg (»Bildungszeit«)",
+          "stateName": "Baden-Württemberg",
           "id": 1,
+          "hasBildungsUrlaubLaws" : true,
+          "entitlementOfTwoYears": "N/A",
+          "entitlementPerYear": "5 days",
           "principles": [
             " (1) Employees in Baden-Württemberg are entitled to educational leave from their employer. During training leave,they shall be released from work by their employer with continued payment of remuneration.",
             "(2) Educational leave may be claimed for vocational or political further training measures and for training for voluntary work.",
@@ -22,8 +26,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.landesrecht-bw.de/bsbw/document/jlr-BiZGBWrahmen/part/X",
         },
         {
-          "stateName": "Berlin (»Bildungzeit«)",
+          "stateNameAndBildung": "Berlin (»Bildungzeit«)",
+          "stateName": "Berlin",
           "id": 2,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "hasBildungsUrlaubLaws" : true,
+          "entitlementPerYear": "5 days",
           "principles": [
             "(1) Employees in the federal state of Berlin shall, while continuing to receive their employer with continued payment of their salary entitled to leave of absence from work for participation in recognized educational educational events (educational leave).",
             "(2) Employees within the meaning of this Act are also: persons employed for their vocational training, persons working from home and persons treated as such, other persons who, due to their economic independence, are to be regarded as are to be regarded as employee-like persons, and participants in measures in institutions for the integration of people with disabilities into working and professional life.",
@@ -48,8 +56,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.berlin.de/sen/arbeit/weiterbildung/bildungszeit/downloads/bildungszeitgesetz-berlin.pdf",
         },
         {
-          "stateName": "Brandenburg (»Bildungsfreistellung«)",
+          "stateNameAndBildung": "Brandenburg (»Bildungsfreistellung«)",
+          "stateName": "Brandenburg",
           "id": 3,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "hasBildungsUrlaubLaws" : true,
+          "entitlementPerYear": "5 days",
           "principles": [
             "(1) Continuing education is an integrated and equal part of the education system. Continuing education within the meaning of this Act shall include all forms of continuation, resumption or supplementation of organized learning outside the educational programmes of general education schools and vocational schools. Insofar as extracurricular youth education is not regulated elsewhere, it shall be included in continuing education within the meaning of this Act. Higher education and vocational training are not covered by this Act.",
             "(2) The providers and institutions of continuing education shall have the right to design their own curricula.",
@@ -63,8 +75,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://bravors.brandenburg.de/gesetze/bbgwbg",
         },
         {
-          "stateName": "Bremen (»Bildungszeit«)",
+          "stateNameAndBildung": "Bremen (»Bildungszeit«)",
+          "stateName": "Bremen",
           "id": 4,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "hasBildungsUrlaubLaws" : true,
+          "entitlementPerYear": "5 days",
           "principles": [
             "(1) Educational leave serves the purpose of political, vocational and general further education within the meaning of Section 1 (1) and Section 2 of the Act on Further Education in the State of Bremen and Section 13 (2) and (3) of the Bremen Children, Youth and Family Support Act.",
             "(2) The granting of educational leave in accordance with this Act is intended to enable employees to participate in recognized educational events while continuing to receive their pay."
@@ -77,8 +93,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.transparenz.bremen.de/metainformationen/bremisches-bildungszeitgesetz-brembzg-vom-18-dezember-1974-105314?asl=bremen02.c.732.de&template=20_gp_ifg_meta_detail_d",
         },
         {
-          "stateName": "Hamburg (»Bildungsurlaub«)",
+          "stateNameAndBildung": "Hamburg (»Bildungsurlaub«)",
+          "stateName": "Hamburg",
           "id": 5,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "(1) By being released from work in accordance with this Act, employees shall be enabled to participate in recognized events for both political education and further vocational training and to qualify for voluntary work.",
             "(2) Political education shall require employees to be able to assess political contexts and perform political and social tasks.",
@@ -91,8 +111,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.landesrecht-hamburg.de/bsha/?query=DOKNR%3Ajlr-BiUrlGHArahmen",
         },
         {
-          "stateName": "Hessen (»Bildungsurlaub«)",
+          "stateNameAndBildung": "Hessen (»Bildungsurlaub«)",
+          "stateName": "Hessen",
           "id": 6,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "Educational leave serves to political education,training (qualification and further training) for the performance of an honorary office or further vocational training for employees not involved in vocational training.",
           "Political education should enable employees to recognize their position in the company or society as well as social contexts. The aim of educational leave for civic education is to improve employees' understanding of societal, social or political contexts in order to promote the participation in the state, society or company that is desirable in a democratic community.",
@@ -105,8 +129,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.rv.hessenrecht.hessen.de/bshe/document/jlr-BiUrlGHE1998V6P1",
         },
         {
-          "stateName": "Mecklenburg-Vorpommern (»Bildungsfreistellung«)",
+          "stateNameAndBildung": "Mecklenburg-Vorpommern (»Bildungsfreistellung«)",
+          "stateName": "Mecklenburg-Vorpommern",
           "id": 7,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "(1) This Act regulates the release of employees in Mecklenburg-Vorpommern for the purpose of further training through participation in recognized events in accordance with § 9.",
             "(2) This Act shall not apply to the legal relationships of persons in the service of the federal government and federally funded public corporations.",
@@ -120,8 +148,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.landesrecht-mv.de/bsmv/document/jlr-BiFreistGMV2013rahmen/part/R",
         },
         {
-          "stateName": "Niedersachsen (»Bildungsurlaub«)",
+          "stateNameAndBildung": "Niedersachsen (»Bildungsurlaub«)",
+          "stateName": "Niedersachsen",
           "id": 8,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "Employees shall be entitled to educational leave to participate in educational events recognized under Section 10 of this Act. There shall be no entitlement to educational leave under this Act if the employee is entitled to time off from work for the educational event under other laws, collective agreements or company agreements for at least the period specified in subsection (4) and with continued payment of wages at least in the amount of the remuneration payable under section 5. The same applies if the employee is not entitled to time off from work under the other regulations only because this has already been taken for other educational events."
           ],
@@ -132,8 +164,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.aewb-nds.de/fileadmin/content/%C3%9Cbertrag/Bildungs_und_Sonderurlaub/NBildUG.PDF",
         },
         {
-          "stateName": "Nordrhein-Westfalen (»Bildungsurlaub«)",
+          "stateNameAndBildung": "Nordrhein-Westfalen (»Bildungsurlaub«)",
+          "stateName": "Nordrhein-Westfalen",
           "id": 9,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "(1) Employee training shall take the form of release from work for the purpose of further vocational and political training at recognized training events with continued payment of wages.",
             "(2) Continuing vocational training for employees serves the purpose of continuing vocational and political training and their combination.",
@@ -152,8 +188,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3920090507103037839",
         },
         {
-          "stateName": "Rheinland-Pfalz (»Bildungsfreistellung«)",
+          "stateNameAndBildung": "Rheinland-Pfalz (»Bildungsfreistellung«)",
+          "stateName": "Rheinland-Pfalz",
           "id": 10,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "(1) Employees in the state of Rhineland-Palatinate are entitled to time off from work with continued payment of their wages (training leave) from their employer for the purposes of further training in accordance with the following provisions.",
             "(2) Employees within the meaning of this Act are employees, persons working from home and persons treated as such, as well as other persons who are to be regarded as employee-like persons due to their economic independence.",
@@ -167,8 +207,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://landesrecht.rlp.de/bsrp/document/jlr-BiFreistGRPV4P1",
         },
         {
-          "stateName": "Saarland (»Bildungsfreistellung«)",
+          "stateNameAndBildung": "Saarland (»Bildungsfreistellung«)",
+          "stateName": "Saarland",
           "id": 11,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "(1) Time off from work shall be granted for further vocational or political training measures and further training for voluntary work or voluntary and unpaid work in the public interest.",
             "(2) Continuing vocational training promotes professional and social skills. It serves to maintain, expand and adapt professional knowledge and skills, to reintegrate job seekers into working life, to transition to another professional activity and to secure existing employment. Scientific continuing education is part of continuing vocational training.",
@@ -182,8 +226,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://recht.saarland.de/bssl/document/jlr-BiFreistGSL2010rahmen",
         },
         {
-          "stateName": "Sachsen-Anhalt (»Bildungsfreistellung«)",
+          "stateNameAndBildung": "Sachsen-Anhalt (»Bildungsfreistellung«)",
+          "stateName": "Sachsen-Anhalt",
           "id": 12,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "(1) Employees are entitled to time off from work for the purpose of further training in educational events recognized in accordance with § 8.",
             "(2) Workers, employees and trainees whose place of work is in the State of Saxony-Anhalt or whose employer has its place of business in the State of Saxony-Anhalt, as well as persons working from home and persons treated as such who are to be regarded as employed persons due to their economic independence, shall be deemed to be employees. The provisions of this Act shall apply accordingly to unemployed persons."
@@ -201,8 +249,12 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.landesrecht.sachsen-anhalt.de/bsst/document/jlr-BiFreistGSTV4P9",
         },
         {
-          "stateName": "Schleswig-Holstein (»Bildungsfreistellung-Bildungsurlaub«)",
+          "stateNameAndBildung": "Schleswig-Holstein (»Bildungsfreistellung-Bildungsurlaub«)",
+          "stateName": "Schleswig-Holstein",
           "id": 13,
+          "entitlementOfTwoYears": "Yes - 10 days every 2 years",
+          "entitlementPerYear": "5 days",
+          "hasBildungsUrlaubLaws" : true,
           "principles": [
             "The law applies to continuing education in Schleswig-Holstein. Continuing education regulated by special legislation remains unaffected by this. The right of the providers and institutions of continuing education to independently design curricula and programs as well as their right to freely choose their directors and employees is guaranteed."
           ],
@@ -213,7 +265,10 @@ export default class HomeRoute extends Route {
           "legalDocument": "https://www.gesetze-rechtsprechung.sh.juris.de/bssh/document/jlr-WeitBiGSHrahmen/part/X",
         },
         {
-          "stateName": "Thüringen (»Bildungsfreistellung«)",
+          "stateNameAndBildung": "Thüringen (»Bildungsfreistellung«)",
+          "stateName": "Thüringen",
+          "entitlementOfTwoYears": "N/A",
+          "entitlementPerYear": "5 days",
           "id": 14,
           "principles": [
             "(1) Employees are entitled to paid educational leave from their employer.",
@@ -231,6 +286,36 @@ export default class HomeRoute extends Route {
             "(6) Employees in a company that has fewer than five employees are not entitled to training leave. When determining the number of employees pursuant to sentence 1, the employees of affiliated companies within the meaning of Section 15 of the German Stock Corporation Act of September 6, 1965 (BGBl. I p. 1089), as amended, shall be included. Part-time employees with a regular weekly working time of no more than 20 hours are counted with a factor of 0.5 and part-time employees with a regular weekly working time of more than 20 but less than 30 hours are counted with a factor of 0.75 towards the number of employees. Employees undergoing vocational training are not taken into account when determining the number of employees."
           ],
           "legalDocument": "https://landesrecht.thueringen.de/bsth/document/jlr-BiFreistGTHpP13",
+        },
+                {
+          "stateNameAndBildung": "Sachsen",
+          "stateName": "Sachsen",
+          "entitlementOfTwoYears": "No",
+          "entitlementPerYear": "No regulation in place",
+          "id": 15,
+          // "hasBildungsUrlaubLaws" : false,
+          "principles": [
+            "Saxony and Bavaria are the only federal states without a statutory right to educational leave. There is currently no legal basis (as of October 2023)."
+          ],
+          "eligibility": [
+            "Nevertheless, employees in Saxony can attend further vocational training with continued pay if their employer supports the project. The leave of absence is at the discretion of the employer. The Saxon Federation of Trade Unions is working together with its major member unions to push through a legal regulation for Saxony - but so far without success. See external link below for the Bildungsurlaub initiative (German website)."
+          ],
+          "legalDocument": "https://www.zeit-fuer-sachsen.de/",
+        },
+                {
+          "stateNameAndBildung": "Bayern",
+          "stateName": "Bayern",
+          "id": 16,
+          "entitlementPerYear": "No regulation in place",
+          "entitlementOfTwoYears": "No",
+          // "hasBildungsUrlaubLaws" : false,
+          "principles": [
+            "Saxony and Bavaria are the only federal states without a statutory right to educational leave. There is currently no legal basis (as of October 2023)."
+          ],
+          "eligibility": [
+            "Unfortunately, there is no legal entitlement to educational leave in Bavaria, as Bavaria has never enacted an educational leave law. Therefore, if you work in Bavaria, you can only take further training during your recreational leave. More information in the below link (German website)."
+          ],
+          "legalDocument": "https://www.bildungsurlaub.de/infos/bundeslaender/bildungsurlaub-in-bayern-leider-nein",
         },
       ]
     };

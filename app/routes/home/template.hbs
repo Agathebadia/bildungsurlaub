@@ -29,6 +29,8 @@
       <Accordion @states={{@model.data}} />
       {{log @model.data 'model.data'}}
 
+    <Entitlement @states={{@model.data}} />
+
     <h3>Include complete schema of scenarios</h3>
     General scenario of eligibility containing employment status + if already used Bildungsurlaub days, and more
     <h3>Schema needs a complete alt text</h3>
@@ -37,10 +39,10 @@
     <h3>Create a request for Bildungsurlaub to HR</h3>
     <h3>Copy text in English</h3>
     clipboard
-    {{!-- ember-cli-clipboard --}}
-    <CopyButton class="border-solid border-2 border-black rounded-md p-1 hover:border-double" @text='text to be copied' @onSuccess={{this.onSuccess}} @onError={{this.onError}}>
+    {{!-- ember-cli-clipboard TODO: FIX --}}
+    {{!-- <CopyButton class="border-solid border-2 border-black rounded-md p-1 hover:border-double" @text='new' @onSuccess={{this.onSuccess}} @onError={{this.onError}}>
       Click To Copy
-    </CopyButton>
+    </CopyButton> --}}
     {{!-- TODO: text should contain the whole letter for application, with markups --}}
     {{!-- ember-cli-clipboard --}}
     <h3>Copy text in German</h3>
