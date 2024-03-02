@@ -9,5 +9,13 @@ stateDiagram-v2
     state2 --> state3
     state3 --> state4
 ```
+
+### Scenario eligibilitz for Bildungsurlaub, flowchart version
+```mermaid
+flowchart TD
+    A("Employed") --> B("In the company for more than 6 months")
+    B --> C("Eligible for Bildungsurlaub")
+    C --> D("Can use up to 10 days every two years")
+```
 <!-- mmdc -i app/components/schema/mermaid.md -o mermaid.md -->
 <!-- https://github.com/mermaid-js/mermaid-cli -->
