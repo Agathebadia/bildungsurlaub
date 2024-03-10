@@ -5,6 +5,7 @@
   {{!-- TODO: Ideally find a way to display a SVG instead, which is more accessible --}}
   {{!-- Mermaid live editor: https://mermaid.live/edit#pako:eNpNkDtvwzAMhP8KwTkG6jTooKFDH0OHTtkKL4xFOwIk0dAjgRDkv1d1UFiaqA-n4-luOIpmVBgTJf4wNAdy3WU_eKhnhb2CT7dYKawbulfw5SGdGUZxC_kCkwRwErhC8vBSZ5_OsXnyXI2smc3J8ip-M1ZnP8ccLOVTIzwoeK8WOTLkBZJA_wSaSgS-cCiQrgKFKbTePXTd63-0NubKH-vbKBs-4A4dB0dG1xpuf6IB678cD6jqqHmibNOAg79XKeUkx-JHVClk3mFe9FYcqolsrLQW8iOy3VmbJOH7UfXa-P0XYap84w --}}
 </div>
+    <h3>Schema needs a complete alt text</h3>
 
 TABLE OF content
 {{!-- TODO --}}
@@ -41,9 +42,7 @@ TABLE OF content
 
     <Entitlement @states={{@model.data}} />
 
-    <h3>Include complete schema of scenarios</h3>
-    General scenario of eligibility containing employment status + if already used Bildungsurlaub days, and more
-    <h3>Schema needs a complete alt text</h3>
+
     <h3>Find a Bildungsurlaub</h3>
     <p>In the German states with Bildungsurlaub regulations, the common rule is to be employed for at least 6 months, to be eligible for Bildungsurlaub (5 days per year or 10 days every 2 years, see #Entitlement content for details). Also, the education itself must be recognized as Bildungsurlaub in the German state you are working in.</p>
 
@@ -78,9 +77,11 @@ TABLE OF content
       <li>Start date and end date of the Bildungsurlaub</li>
     </ul>
 
-    Ready to submit a request? Let's do it! Here is a template you can use:
+    Ready to submit a request? Let's do it!
 
-    <p id="copyTextToClipboard">To the attention of `INSERT DEPARTMENT`:
+    <p>Here is a template you can use in English (scroll down for the German template):</p>
+
+    <p id="copyEnglishTemplateToClipboard">To the attention of `INSERT DEPARTMENT`:
       I would like to request an approval for an educational leave (Bildungsurlaub) between `INSERT STARTING DATE` and `END DATE` (`INSERT EXACT NUMBER OF DAYS` days).
       As stated by the `NAME OF THE STATE YOUR ARE WORKING IN` law, as an employee, I'm entitled to days for further education. I would like to use those days for `NAME OF THE COURSE`.
       The course consists of:
@@ -89,18 +90,27 @@ TABLE OF content
 
       I have informed my direct manager of the above request (you can also CC your manager if you are sending the request as an email).
 
+      Please let me know if you need additional information.
+
+      Best,
 
     </p>
-    <button onClick={{this.copyContent}}>Copy to clipboard!</button>
-    <h3>Copy text in English</h3>
-    clipboard
-    {{!-- ember-cli-clipboard TODO: FIX --}}
-    {{!-- <CopyButton class="border-solid border-2 border-black rounded-md p-1 hover:border-double" @text='new' @onSuccess={{this.onSuccess}} @onError={{this.onError}}>
-      Click To Copy
-    </CopyButton> --}}
-    {{!-- TODO: text should contain the whole letter for application, with markups --}}
-    {{!-- ember-cli-clipboard --}}
-    <h3>Copy text in German</h3>
+    <button class="border-solid	border-black	" {{on "click" (fn this.copyContent "copyEnglishTemplateToClipboard")}}>Copy to clipboard!</button>
+        <p id="copyGermanTemplateToClipboard">Zu Händen von `ABTEILUNG EINFÜGEN`:
+        Ich möchte eine Genehmigung für einen Bildungsurlaub zwischen `Beginndatum einfügen` und `Enddatum` (genaue Anzahl der
+        Tage einfügen) beantragen.
+        Gemäß dem Gesetz `NAME DES STAATES IN DEM SIE ARBEITEN` habe ich als Arbeitnehmer Anspruch auf Tage zur Weiterbildung.
+        Ich möchte diese Tage für `NAME DES KURSES` verwenden.
+        Der Kurs besteht aus:
+        Fügen Sie die Hauptthemen des Kurses ein, was in etwa den Stunden des Kurses pro Tag/Woche entspricht.
+        In der Anlage finden Sie zusätzliche Informationen zum Kurs: "LINK ZUM KURS UND/ODER LINK ZUR SCHULE EINFÜGEN".
+
+        Ich habe meinen direkten Vorgesetzten über den obigen Antrag informiert (Sie können auch Ihren Vorgesetzten informieren,
+        wenn Sie den Antrag per E-Mail senden).
+
+        </p>
+        <button class="border-solid	border-black	"
+        {{on "click" (fn this.copyContent "copyGermanTemplateToClipboard")}}>Copy to clipboard!</button>
     <h3>Create table of content</h3>
     <h3>Add additional links</h3>
     <h3>Replace Tailwind logo with Bildungsurlaub one (Canva logo creation? or ask ChatGPT for platform to create logos)</h3>
