@@ -36,7 +36,7 @@ TODO:
 <div id="general-definition">
     <h1>What is Bildungsurlaub?</h1>
 
-    <p class="m-8"><em><q>In most federal states, employees are offered the opportunity to take time off work to take advantage of
+    <p class="m-8" id="templatesAndQuotes"><em><q>In most federal states, employees are offered the opportunity to take time off work to take advantage of
         opportunities
         for further education. This is known as "Bildungsurlaub" or "Bildungsfreistellung".
 
@@ -45,7 +45,7 @@ TODO:
         to sources that provide detailed information on requirements and further information.</q></em> - InfoWeb Weiterbildung
     </p>
 
-    <p class="m-8"><em><q>Educational leave is the legal entitlement of employees in [Germany] to time off work to participate in
+    <p class="m-8" id="templatesAndQuotes"><em><q>Educational leave is the legal entitlement of employees in [Germany] to time off work to participate in
     recognized further education events with continued payment of remuneration. </q></em> - Berlin.de</p>
 </div>
 <div id="definition-by-law">
@@ -104,7 +104,7 @@ TODO:
 
     <p>Here is a template you can use in English (scroll down for the German template):</p>
 
-    <p class="m-2" id="copyEnglishTemplateToClipboard">To the attention of {INSERT DEPARTMENT}:
+    <p class="m-2" id="templatesAndQuotes">To the attention of {INSERT DEPARTMENT}:
       I would like to request an approval for an educational leave (Bildungsurlaub) between {INSERT STARTING DATE} and {END DATE} ({INSERT EXACT NUMBER OF DAYS} days).
       As stated by the {NAME OF THE STATE YOUR ARE WORKING IN} law, as an employee, I'm entitled to days for further education. I would like to use those days for {NAME OF THE COURSE}.
       The course consists of:
@@ -118,8 +118,9 @@ TODO:
       Best,
         {YOUR NAME}
     </p>
-    <button class="border-solid	border-black	" {{on "click" (fn this.copyContent "copyEnglishTemplateToClipboard")}}>Copy to clipboard!</button>
-        <p class="m-2" id="copyGermanTemplateToClipboard">Zu Händen von {ABTEILUNG EINFÜGEN}:
+    <div class="text-right"><button class=" border-solid	border-black  bg-gray-900 copy-to-clipboard" {{on "click" (fn this.copyContent "copyEnglishTemplateToClipboard")}}>Copy to clipboard!</button>
+    </div>
+        <p class="m-2" id="templatesAndQuotes">Zu Händen von {ABTEILUNG EINFÜGEN}:
         Ich möchte eine Genehmigung für einen Bildungsurlaub zwischen {Beginndatum einfügen} und {Enddatum} (genaue Anzahl der
         Tage einfügen) beantragen.
         Gemäß dem Gesetz {NAME DES STAATES IN DEM SIE ARBEITEN} habe ich als Arbeitnehmer Anspruch auf Tage zur Weiterbildung.
@@ -133,8 +134,10 @@ TODO:
 
         {NAME}
         </p>
-        <button class="border-solid	border-black	"
+        <div class="text-right">
+        <button class="border-solid	border-black copy-to-clipboard bg-gray-900"
         {{on "click" (fn this.copyContent "copyGermanTemplateToClipboard")}}>Copy to clipboard!</button>
+        </div>
 </div>
 <div id="after-your-bildungsurlaub">
 
