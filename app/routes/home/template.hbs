@@ -1,12 +1,29 @@
 TODO:
 <h3>Styling of each section</h3>
 <h3>Styling of titles</h3>
-<h3>Link content to table of content</h3>
 <h3>Fix schema mermaid: Use SVG or .md generator</h3>
 <h3>Add alt text for mermaid schema</h3>
 <h3>Replace Tailwind logo with Bildungsurlaub one (Canva logo creation? or ask ChatGPT for platform to create logos)</h3>
 <h3>Verify pages are accessible with Colorblind extension + Lighthouse</h3>
+<!-- Skip links to enable keyboard users to reach the main content of the page  -->
+<div class="skip-to-main">
+  <a href="#main">
+    Skip to main content
+  </a>
+</div>
 
+<!-- Table of content -->
+<div class="table-of-contents" role="navigation" aria-labelledby="contents-heading">
+  <h2 id="contents-heading">Contents</h2>
+  <ul style="list-style: inside">
+    <li><a class="underline underline-offset-2" href="#general-definition">Bildungs ur... what?</a></li>
+    <li><a class="underline underline-offset-2" href="#definition-by-law">Definition and eligibility according to the German law</a></li>
+    <li><a class="underline underline-offset-2" href="#entitlement">Entitlement per state</a></li>
+    <li><a class="underline underline-offset-2" href="#find-your-bildungsurlaub">Find a Bildungurlaub</a></li>
+    <li><a class="underline underline-offset-2" href="#request-for-approval">Request approval for Bildungsurlaub</a></li>
+    <li><a class="underline underline-offset-2" href="#after-your-bildungsurlaub">After your Bildungsurlaub</a></li>
+  </ul>
+</div>
 <div class="flex justify-center">
   <div>
     <img src="images/mermaid.png" alt="schema to employed until eligibility for bildungsurlaub">
@@ -15,20 +32,9 @@ TODO:
   {{!-- Mermaid live editor: https://mermaid.live/edit#pako:eNpNkDtvwzAMhP8KwTkG6jTooKFDH0OHTtkKL4xFOwIk0dAjgRDkv1d1UFiaqA-n4-luOIpmVBgTJf4wNAdy3WU_eKhnhb2CT7dYKawbulfw5SGdGUZxC_kCkwRwErhC8vBSZ5_OsXnyXI2smc3J8ip-M1ZnP8ccLOVTIzwoeK8WOTLkBZJA_wSaSgS-cCiQrgKFKbTePXTd63-0NubKH-vbKBs-4A4dB0dG1xpuf6IB678cD6jqqHmibNOAg79XKeUkx-JHVClk3mFe9FYcqolsrLQW8iOy3VmbJOH7UfXa-P0XYap84w --}}
 </div>
 
-TABLE OF content
-{{!-- TODO --}}
-- Bildungs ur... what?
-- Definition and eligibility according to the German law
-- Entitlement per state
-- Find a Bildungurlaub
-- Request approval for Bildungsurlaub
-  -- Prepare your submission
-  -- Send a request to your employer
-  -- Copy template to
-- After your Bildungsurlaub
-
-<div>
-    <h2>What is Bildungsurlaub?</h2>
+<main id="main">
+<div id="general-definition">
+    <h1>What is Bildungsurlaub?</h1>
 
     <p class="m-8"><em><q>In most federal states, employees are offered the opportunity to take time off work to take advantage of
         opportunities
@@ -41,18 +47,23 @@ TABLE OF content
 
     <p class="m-8"><em><q>Educational leave is the legal entitlement of employees in [Germany] to time off work to participate in
     recognized further education events with continued payment of remuneration. </q></em> - Berlin.de</p>
-
-    <h2>Definition and eligibility according to the German law</h2>
+</div>
+<div id="definition-by-law">
+    <h1>Definition and eligibility according to the German law</h1>
 
     <p class="m-8">Each principle and eligibility depend on the state your are working in. In the overview below you will find a description of the principles (Grundsätze) and eligibility (Anspruch) of each state:</p>
 
       <Accordion @states={{@model.data}} />
-      {{log @model.data 'model.data'}}
+</div>
+<div id="entitlement">
 
+    <h1>Entitlement per state</h1>
     <Entitlement @states={{@model.data}} />
+</div>
 
+<div id="find-your-bildungsurlaub">
 
-    <h2>Find a Bildungsurlaub</h2>
+    <h1>Find a Bildungsurlaub</h1>
     <p>In the German states with Bildungsurlaub regulations, the common rule is to be employed for at least 6 months, to be eligible for Bildungsurlaub (5 days per year or 10 days every 2 years, see #Entitlement content for details). Also, the education itself must be recognized as Bildungsurlaub in the German state you are working in.</p>
 
     <p>Reminder: If approved, the employer continues to pay the salary of the employee (while attending further education), BUT the course is at the expense of the <em>employee</em>. Depending on the company, and/or the nature of the course, and/or the nature of your work, and the existing rules within your company, the employer can grant an educational budget, which can be used for Bildungsurlaub.</p>
@@ -66,8 +77,10 @@ TABLE OF content
       <li><a class="underline underline-offset-2" href="https://www.berlin.de/sen/arbeit/weiterbildung/bildungszeit/suche/">Bildungsurlaub - Official Berlin website</a></li>
     </ul>
     <h2>List or schema of actions</h2>
+</div>
+<div id="request-for-approval">
 
-<h2> Request approval for Bildungsurlaub</h2>
+<h1> Request approval for Bildungsurlaub</h1>
     Once you have found a course, I recommend you to follow the below steps:
 
     <ul style="list-style: inside">
@@ -122,14 +135,16 @@ TABLE OF content
         </p>
         <button class="border-solid	border-black	"
         {{on "click" (fn this.copyContent "copyGermanTemplateToClipboard")}}>Copy to clipboard!</button>
+</div>
+<div id="after-your-bildungsurlaub">
 
-        <h2>After your Bildungsurlaub</h2>
+        <h1>After your Bildungsurlaub</h1>
 
         <p>You're Bildungsurlaub is over? Make sure to forward your certificate to your HR department (or the original department of approval), to confirm the education has taken place at the agreed school, with the agreed courses.</p>
 </div>
 
 
-<h2><b>Weiterbildung:</b></h2>
+<h1><b>Weiterbildung:</b></h1>
 <ul style="list-style: inside">
   <li><a class="underline underline-offset-2"
     href="https://www.fu-berlin.de/en/sites/abt-1/referate/1c/welcome-service/ansprechpersonen-servicestellen/weiterbildung/bildungszeit.html">Taking
@@ -144,3 +159,4 @@ TABLE OF content
   <li><a class="underline underline-offset-2" href="https://www.iwwb.de/information/Bildungsurlaub-in-Deutschland-weiterbildung-26.html#:~:text=Berlin">Info Web
     Weiterbildung - Shows the official info (PDFs) and law</a></li>
 </ul>
+</main>

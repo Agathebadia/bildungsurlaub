@@ -1,0 +1,62 @@
+
+/* General */
+
+html  {
+  background-color: #ADADAD;
+}
+
+/* Headers */
+
+h1 {
+  font-size: 2rem;
+  border: 3px solid;
+}
+
+div.h1 {
+  font-size: inherit;
+  border: 3px solid;
+}
+
+/* Accordion eligibility */
+#eligibility-button-select {
+  background-color: #83677b;
+  color: #d4d3d3;
+}
+
+#accordion-flush #accordion-main-body {
+  color: #d4d3d3;
+  background-color: #64485c;
+}
+/* Table of content */
+
+.skip-to-main a {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skip-to-main a:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  transform: scale(1.2);
+  text-shadow: none;
+  margin: 0.8em;
+  padding: 0.5em;
+  border: 2px solid;
+}
+
+div.table-of-contents {
+  border: 3px solid;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  width: fit-content;
+}
+
+div.table-of-contents li {
+  margin: 0.5em 0 0.5em 0;
+}
