@@ -30,17 +30,17 @@ div.h1 {
 
 /* Accordion eligibility */
 #eligibility-button-select {
-  background-color: #83677b;
+  background-color: #46A29F;
   color: #C4C7C8;
 }
 
 #accordion-flush {
-  border: 3px solid #64485c;
+  border: 3px solid #46A29F;
 }
 
 #accordion-main-body {
   color: #C4C7C8;
-  background-color: #64485c;
+  background-color: #46A29F;
 }
 /* Table of content */
 
@@ -69,8 +69,8 @@ div.table-of-contents {
   padding-right: 1em;
   padding-top: 0.5em;
   width: fit-content;
-  border: 3px solid #64485c;
-  background-color: #83677b;
+  border: 3px solid #46A29F;
+  /* background-color: #46A29F; */
   color: #C4C7C8;
   border-radius: 3px;
 }
@@ -80,23 +80,24 @@ div.table-of-contents li {
 }
 
 table, caption {
-    background-color: #83677b;
-      color: #C4C7C8;
+    background-color: #202834;
+  color: #C4C7C8;
+  border: 3px solid #46A29F;
 }
 
 #templatesAndQuotes {
   width: 80%;
-      background-color: #83677b;
-        color: #C4C7C8;
+    /* background-color: #46A29F; */
+      color: #C4C7C8;
         padding: 3px;
-        border: 3px solid #64485c;
+          border: 3px solid #46A29F;
         border-radius: 3px;
 }
 
 /* Buttons */
 
 .copy-to-clipboard {
-  border: 3px solid #64485c;
+    border: 3px solid #46A29F;
   border-radius: 3px;
         color: #C4C7C8;
         padding: 4px;
